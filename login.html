@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-login">
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Créer un compte</h1>
+			<input type="text" placeholder="Nom" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Mot de passe" />
+			<button>S'inscrire</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="index.html">
+			<h1>Conexion</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Mot de passe" />
+			<a href="#" class="forgot-password" >Mot de passe oublié ?</a>
+			<button>Se connecter</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bienvenue</h1>
+				<p>Si vous avez deja un compte vous pouvez vous connecter grace au bouton ci dessous !</p>
+				<button class="ghost" id="signIn">Se connecter</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Bonjour !</h1>
+				<p>Pour créer un compte c'est ici !</p>
+				<button class="ghost" id="signUp">S'inscrire</button>
+			</div>
+		</div>
+	</div>
+</div>
+  <script  src="js/script-login.js"></script>
+</body>
+</html>

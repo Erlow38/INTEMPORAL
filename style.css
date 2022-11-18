@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.body-login {
+	background: #f6f5f7;
+	background-image: url(img/Background.png);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.body-index {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1017%26quot%3b)' fill='none'%3e%3cpath d='M75.83 0C108.94 5.36 111.12 22.65 140 22.65C152.37 22.65 144.81 2.19 158.33 0C214.81 -9.14 219.17 0 280 0C350 0 350 0 420 0C490 0 490 0 560 0C630 0 630 0 700 0C770 0 770 0 840 0C910 0 910 0 980 0C1050 0 1050 0 1120 0C1190 0 1190 0 1260 0C1293.8 0 1295.57 -7.87 1327.59 0C1365.57 9.34 1365.17 34.43 1400 34.43C1426.37 34.43 1421.8 6.93 1450 0C1491.8 -10.28 1522 -27 1540 0C1567 40.5 1541.43 67.89 1540 135C1539.94 137.89 1537.02 137.66 1537.02 140C1537.02 141.75 1539.95 141.02 1540 143.18C1541.44 211.02 1540 211.59 1540 280C1540 350 1540 350 1540 420C1540 490 1569.08 519.08 1540 560C1519.34 589.08 1464.24 588.98 1440.53 560C1406.97 518.98 1423.06 489.67 1425.45 420C1427.87 349.67 1458.7 343.16 1450.15 280C1445.97 249.16 1424.81 232 1400 232C1375.74 232 1376.11 256.11 1352 280C1306.11 325.46 1306.72 326.11 1260 370.7C1233.37 396.11 1224.25 389.26 1205.31 420C1165.92 483.91 1180.34 499.26 1143.33 560C1137.69 569.26 1131.66 560 1120 560C1050 560 1050 560 980 560C910 560 910 560 840 560C770 560 770 560 700 560C630 560 630 560 560 560C490 560 490 560 420 560C350 560 350 560 280 560C210 560 210 560 140 560C70 560 35 595 0 560C-35 525 0 490 0 420C0 350 0 350 0 280C0 210 0 210 0 140C0 70 -24.59 45.41 0 0C13.32 -24.59 38.94 -5.97 75.83 0' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M560 20C522.04 29.14 534.51 78.78 526.4 140C517.29 208.78 513.43 214.52 525.57 280C530.23 305.11 539.07 321.18 560 321.18C592.49 321.18 597.94 303.18 632.41 280C667.94 256.1 665.64 252.77 700 227.03C759.07 182.77 819.26 174.71 819.26 140C819.26 110.29 757.14 124.63 700 98.18C627.51 64.63 608.84 8.23 560 20' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M980 106.4C941.09 106.4 896 128.4 896 140C896 150.87 938.48 151.35 980 151.35C998.74 151.35 1016.52 149.78 1016.52 140C1016.52 127.31 1001.35 106.4 980 106.4' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1260 57.65C1227.7 57.65 1184.32 104.87 1184.32 140C1184.32 167.25 1225.09 182.42 1260 182.42C1284.14 182.42 1302.42 164.52 1302.42 140C1302.42 102.14 1286.75 57.65 1260 57.65' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M280 416.41C278.24 416.41 277.78 417.96 277.78 420C277.78 428.51 277 437.5 280 437.5C283.49 437.5 290.77 426.79 290.77 420C290.77 416.25 284.73 416.41 280 416.41' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M840 346.32C807.19 352.12 800 383.8 800 420C800 452.46 808.6 474.06 840 483.64C898.6 501.51 918.23 495.87 980 474.9C1011.96 464.05 1027.46 444.26 1027.46 420C1027.46 400.9 1006.35 398.54 980 388.18C912.62 361.7 897.19 336.21 840 346.32' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M55.47 140C97.83 107.18 101.76 111.16 140 74.12C174.03 41.16 161.93 20.15 200 0C231.93 -16.91 240 0 280 0C350 0 350 0 420 0C455 0 490 -19.4 490 0C490 36.6 454.43 55.66 420 112C411.65 125.66 404.44 125.83 404.44 140C404.44 155.39 412.79 155.29 420 171.11C444.67 225.29 468.2 226.66 468.2 280C468.2 324.34 458.09 357.02 420 366.47C363.99 380.36 336.37 311.41 280 326.67C237.48 338.18 234.8 368.73 222.22 420C206.17 485.39 248.57 516 222.73 560C207.46 586 181.37 560 140 560C70 560 42.28 587.72 0 560C-27.72 541.82 -14.38 507.93 0 468.2C10.96 437.93 50.69 443.32 50.69 420C50.69 397.92 10.26 405.72 0 377.39C-15.09 335.72 0 328.69 0 280C0 231.31 -16.14 223.35 0 182.61C11.59 153.35 27.83 161.42 55.47 140' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M700 52.73C661.58 52.73 623.4 14.46 623.4 0C623.4 -11.91 661.7 0 700 0C739.04 0 778.08 -11.95 778.08 0C778.08 14.42 738.92 52.73 700 52.73' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1355.45 140C1355.45 116.67 1375.69 91.8 1400 91.8C1429.24 91.8 1462.55 116.92 1462.55 140C1462.55 162.02 1429.54 182 1400 182C1375.99 182 1355.45 161.77 1355.45 140' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1540 10C1538.18 10 1533.33 3.22 1533.33 0C1533.33 -1.78 1538.67 -2 1540 0C1542 3 1541.51 10 1540 10' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M140 264.44C132.53 264.44 129.23 272.39 129.23 280C129.23 287 132.83 293.66 140 293.66C154.69 293.66 172.94 287.23 172.94 280C172.94 272.62 154.38 264.44 140 264.44' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M877.97 280C877.97 241.43 921.7 220.64 980 198.65C1042.71 174.99 1051.76 179.73 1120 188.7C1191.76 198.13 1195.68 203.18 1260 235.45C1286.68 248.83 1302 258.11 1302 280C1302 301.09 1281.65 301.39 1260 321.41C1205.96 371.39 1199.46 366.08 1150.63 420C1129.46 443.37 1135.8 476 1120 476C1103.88 476 1110.31 441.45 1086.78 420C1040.31 377.65 1033.39 384.21 980 348.41C928.98 314.21 877.97 316.31 877.97 280' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1502.39 280C1502.39 249.25 1529.76 222.73 1540 222.73C1548.56 222.73 1540 251.37 1540 280C1540 330.4 1549.1 380.8 1540 380.8C1530.29 380.8 1502.39 328.29 1502.39 280' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M495.83 420C527.56 404.19 526.19 389.8 560 389.8C628.28 389.8 630 404.9 700 420C700 420 700 420 700 420C737.5 490 775 512.45 775 560C775 582.45 737.5 560 700 560C630 560 630 560 560 560C490 560 490 560 420 560C374.71 560 329.41 580.14 329.41 560C329.41 529.93 369.03 502.45 420 459.57C452.24 432.45 457.56 439.07 495.83 420' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M935.79 560C935.79 555.75 958.43 543.53 980 543.53C996.09 543.53 1011.11 555.63 1011.11 560C1011.11 563.86 995.56 560 980 560C957.89 560 935.79 563.98 935.79 560' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1532.63 560C1532.63 547.36 1538.13 528.89 1540 528.89C1541.82 528.89 1542.98 547.42 1540 560C1539.29 562.98 1532.63 562.91 1532.63 560' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M121.51 140C121.51 131.34 132.39 134.46 140 125.59C192.47 64.46 185.09 50.76 241.67 0C255.09 -12.04 260.84 0 280 0C347.09 0 400.51 -32.08 414.17 0C430.32 37.92 379.3 71.41 339.63 140C312.21 187.41 321.47 226.35 280 232C221.65 239.96 205.31 205.13 140 167.22C126.07 159.13 121.51 152.16 121.51 140' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M700 7.27C694.7 7.27 689.43 1.99 689.43 0C689.43 -1.64 694.71 0 700 0C705.38 0 710.77 -1.65 710.77 0C710.77 1.99 705.37 7.27 700 7.27' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 233.33C19.33 233.33 61.92 256.66 61.92 280C61.92 303.34 19.33 326.67 0 326.67C-11.63 326.67 0 303.34 0 280C0 256.66 -11.63 233.33 0 233.33' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M937.29 280C937.29 263.85 955.97 245.95 980 245.95C1022.33 245.95 1070 264.18 1070 280C1070 295.53 1022.96 308.64 980 308.64C956.61 308.64 937.29 295.2 937.29 280' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M111.03 420C128.3 401.92 125.91 379.02 140 379.02C153.73 379.02 166.26 396.82 166.67 420C167.85 487.31 156.22 491.53 143.18 560C142.89 561.53 141.59 560 140 560C70 560 56.18 573.82 0 560C-13.82 556.6 -10.19 538.41 0 525.57C45.33 468.41 58.3 475.19 111.03 420' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M398.04 560C398.04 552.71 405.12 541.59 420 535.65C486.1 509.28 495.86 488.16 560 495.38C604.04 500.34 636.36 541.68 636.36 560C636.36 573.99 598.18 560 560 560C490 560 490 560 420 560C409.02 560 398.04 564.88 398.04 560' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1017'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 0px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+.forgot-password {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.forgot-password:hover {
+	text-decoration: underline;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #1B263B;
+	background-color: #1B263B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #1B263B;
+	background: -webkit-linear-gradient(to right, #1B263B, #1B263B);
+	background: linear-gradient(to right, #1B263B, #1B263B);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+
+
+
+
+.main-wrapper img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper a{
+    color: #ebebeb;
+    text-decoration: none;
+}
+.main-wrapper ul li{
+    list-style-type: none;
+}
+.navbar{
+    background: #1B263B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.navbar-collapse{
+    overflow-y: scroll;
+    display: none;
+}
+.navbar-nav > li > a{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: block;
+    padding: 0.6rem 0;
+    margin: 0.2rem 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.navbar-nav > li > a:hover{
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 992px){
+    .navbar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 0 5rem;
+        position: relative;
+    }
+    .navbar-collapse{
+        display: block!important;
+        overflow-y: hidden;
+        flex: 1 0 auto;
+    }
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav > li > a{
+        border-bottom: none;
+        margin: 0 0.4rem;
+        padding: 1.7rem 1.8rem 1.7rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .navbar-nav > li:hover .sub-menu{
+        display: grid!important;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 5rem;
+    }
+    .navbar-nav > li{
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.4s ease;
+    }
+    .navbar-nav > li:hover{
+        border-bottom-color: #ebebeb;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+body::-webkit-scrollbar-track {
+    background: #ebebeb; 
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #1B263B; 
+    border-radius: 20px; 
+    border: 3px solid #ebebeb; 
+}
+
+
+
+.product-display{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-display .card{
+  position: relative;
+  width: 160px;
+  height: 225px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.product-display .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #415A77;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.product-display .card:hover:before{
+  clip-path: circle(150px at 80% -20%);
+}
+
+.product-display .card:after{
+  content: 'FSPM';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.05)
+}
+
+.product-display .card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.product-display .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.product-display .card .imgBx img{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 150px;
+  z-index: 10;
+}
+
+.product-display .card:hover .imgBx img{
+	display: none;
+}
+
+.product-display .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.product-display .card:hover .contentBx{
+  height: 210px;
+}
+
+.product-display .card .contentBx p{
+	color: #ebebeb;
+	z-index: 100;
+	position: absolute;
+	top: -125%;
+	right: 0%;
+	font-weight: bold;
+	color: #1B263B;
+	margin: 0;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #ebebeb;
+}
+
+.product-display .card:hover .contentBx p{
+	
+	color: #ebebeb;
+	z-index: 100;
+	margin: 0;
+	font-weight: bold;
+}
+
+.product-display .card:hover .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ebebeb;
+  margin: 0;
+  display: contents;
+  z-index: 100;
+}
+
+.product-display .card .contentBx h2 {
+	color: #1B263B;
+	margin: 0;
+	background-color: #ebebeb;
+}
+
+.product-display .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ebebeb;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #181818;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 50px;
+}
+
+.product-display .card:hover .contentBx a{
+  	opacity: 1;
+  	transform: translateY(0px);
+  	transition-delay: 0.75s;
+	background-color: #ebebeb;
+	color: #181818;
+}
