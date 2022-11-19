@@ -426,10 +426,10 @@ body::-webkit-scrollbar-thumb {
 	padding: 5px;
 	border-radius: 10px;
 	background-color: #ebebeb;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product-display .card:hover .contentBx p{
-	
 	color: #ebebeb;
 	z-index: 100;
 	margin: 0;
