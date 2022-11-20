@@ -226,11 +226,6 @@ input {
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
-
-
-
-
-
 .main-wrapper img{
     width: 100%;
     display: block;
@@ -254,6 +249,10 @@ input {
 	justify-content: center;
     z-index: 1000;
 }
+.navbar-nav{
+	padding: 0%;
+	margin: 0%;
+}
 .navbar-brand{
     font-size: 1.8rem;
     letter-spacing: 3px;
@@ -275,6 +274,50 @@ input {
     opacity: 0.7;
 }
 
+.dropdown-menu a {
+    display:inline-block;
+    color:#ebebeb;
+    text-decoration:none;
+	margin: 0;
+	padding: 0;
+}
+ 
+.dropdown-menu {
+    display:none;
+    position:absolute;
+    left:0;
+    background:#415A77;
+    float:left;
+    z-index: 10;
+}
+
+.dropdown-menu a:hover {
+	background-color: #1B263B;
+}
+.dropdown-menu li:hover {
+	background-color: #1B263B;
+}
+  
+.dropdown-menu li {
+    width:100%;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+.dropdown-menu {
+	padding: 0;
+}
+.nav-drop:hover ul {
+    display:block;
+}
+.dropdown-menu-item {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-drop {
+    position:relative;
+    margin:0 20px 0 0;
+    display:inline-block;
+}
 @media screen and (max-width: 992px){
 	
 	.navbar{
@@ -301,6 +344,9 @@ input {
 		padding:  0 0 0 0.5rem;
 		font-size: 10px;
 	}
+	.dropdown-menu-item a {
+		padding: 30px;
+	}
 
 }
 
@@ -323,10 +369,10 @@ input {
         border-bottom: none;
         margin: 0 0.4rem;
         padding: 2.7rem 2.8rem 2.7rem 2.8rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 	.brand-and-icon a{
-		font-size: 3.8rem;
+		font-size: 3.2rem;
 	}
     .navbar-nav .nav-item{
         border-bottom: 2px solid transparent;
@@ -538,6 +584,20 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	background: #415A77;
 }
+
+.content-mega-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	color: #ebebeb;
+}
+.content-mega-menu label {
+	display: block;
+	margin: 5px;
+}
+.content-mega-menu input {
+	width: 100px;
+}
 .lvl-1 {
 	flex: 1;
 	width: 100%;
@@ -577,6 +637,11 @@ body::-webkit-scrollbar-thumb {
 
 select {
 	height: 30px;
+}
+
+svg {
+	padding: 0;
+	margin: 0;
 }
   
 @media screen and ( max-width:1200px ) {
