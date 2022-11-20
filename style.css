@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800');
 
 * {
 	box-sizing: border-box;
@@ -32,7 +32,6 @@ h1 {
 h2 {
 	text-align: center;
 }
-
 p {
 	font-size: 14px;
 	font-weight: 100;
@@ -308,10 +307,6 @@ input {
 .nav-drop:hover ul {
     display:block;
 }
-.dropdown-menu-item {
-	padding: 0;
-	margin: 0;
-}
 
 .nav-drop {
     position:relative;
@@ -370,9 +365,13 @@ input {
         margin: 0 0.4rem;
         padding: 2.7rem 2.8rem 2.7rem 2.8rem;
         font-size: 1.2rem;
+		font-weight: 600;
     }
+	.nav-drop-item {
+		padding: 0;
+	}
 	.brand-and-icon a{
-		font-size: 3.2rem;
+		font-size: 2.5rem;
 	}
     .navbar-nav .nav-item{
         border-bottom: 2px solid transparent;
@@ -509,7 +508,7 @@ body::-webkit-scrollbar-thumb {
 
 .product-display .card:hover .contentBx h2{
   position: relative;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1px;
   color: #ebebeb;
   margin: 0;
