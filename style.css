@@ -259,7 +259,7 @@ input {
     letter-spacing: 3px;
     font-weight: 700;
 }
-.navbar-nav > li > a{
+.navbar-nav li a{
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: 700;
@@ -271,7 +271,7 @@ input {
     position: relative;
     transition: all 0.4s ease;
 }
-.navbar-nav > li > a:hover{
+.navbar-nav li a:hover{
     opacity: 0.7;
 }
 
@@ -468,7 +468,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .product-display .card:hover .imgBx img{
-	display: none;
+	opacity: 0;
+	transition: all 0.5s ease;
 }
 
 .product-display .card .contentBx{
@@ -654,6 +655,7 @@ svg {
 	padding: 0;
 	margin: 0;
 }
+
   
 @media screen and ( max-width:1200px ) {
 	.mega-menu-main {
