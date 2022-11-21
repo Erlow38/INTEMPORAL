@@ -507,7 +507,17 @@ body::-webkit-scrollbar-thumb {
 	margin: 0;
 	font-weight: bold;
 }
-
+.product-display .card .contentBx .time{
+	color: #ebebeb;
+	font-size: 18px;
+	margin: 10px;
+	position: absolute;
+	top: -50%;
+	right: 0%;
+}
+.product-display .card:hover .contentBx .time{
+	display: none;
+}
 .product-display .card:hover .contentBx h2{
   position: relative;
   font-weight: 800;
