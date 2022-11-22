@@ -8,146 +8,35 @@
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body class="body-shop">
-    <div class = "main-wrapper">
-      <nav class = "navbar">
-        <div class = "brand-and-icon">
-          <a href = "index.html" class = "navbar-brand">FSPM</a>
-        </div>
-          <ul class = "navbar-nav">
-            <li class="nav-item">
-              <a href = "#">Accueil</a>
-            </li>
-            <li class="lvl-0 nav-item">
-              <a href = "#" class = "menu-link">Filtres ﹀</a>
-              <ul class="mega-menu-tab">
-                <form action=""></form>
-                <li class="lvl-1">
-                  <br>
-                  <h2>Catégories</h2>
-                  <br>
-                  <ul class="lvl-2">
-                    <select name="marques" id="marques-select">
-                      <option value="">--Choisissez une catégorie--</option>
-                      <option value="mecanique">Mécanique</option>
-                      <option value="automatique">Automatique</option>
-                      <option value="quartz">Quartz</option>
-                  </select>
-                    <br>
-                    <br>
-                    <br>
-                    <h2>Matériaux</h2>
-                    <br>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="acier" name="acier" checked>
-                        <label for="acier">Acier</label>
-                      </form>
-                    </li>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="argent" name="argent" checked>
-                        <label for="argent">Argent</label>
-                      </form>
-                    </li>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="or" name="or" checked>
-                        <label for="or">Or</label>
-                      </form>
-                    </li>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="ceramique" name="ceramique" checked>
-                        <label for="ceramique">Céramique</label>
-                      </form>
-                    </li>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="diamant" name="diamant" checked>
-                        <label for="diamant">Diamants</label>
-                      </form>
-                    </li>
-                  </ul>
-                <br>
-                <br>
-                </li>
-                <li class="lvl-1"><br>
-                  <h2>Marques</h2>
-                  <br>
-                  <ul class="lvl-2">
-                    <li>
-                      <form action="">
-                        <select name="marques" id="marques-select">
-                          <option value="">--Choisissez une marque--</option>
-                          <option value="rolex">Rolex</option>
-                          <option value="seiko">seiko</option>
-                          <option value="audemars">Audemars Piguet</option>
-                          <option value="jacob">Jacob & Co</option>
-                          <option value="patek">Philippe Patek</option>
-                      </select>
-                      </form>
-                    </li>
-                    <br>
-                    <br>
-                    <h2>Complications</h2>
-                    <br>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="quantum" name="quantum" checked>
-                        <label for="quantum">Quantième perpétuel</label>
-                      </form>
-                    </li>
-                    <li>
-                      <form action="">
-                        <input type="checkbox" id="date" name="date" checked>
-                        <label for="date">Quantième</label>
-                      </form>
-                    </li>
-                    <br>
-                    <br>
-                    <h2>Prix</h2>
-                    <br>
-                    <form action="">
-                    <li class="content-mega-menu">
-                      <label for="">Prix min: </label>
-                      <input type="number" placeholder="10" min="0" />
-                      <label for=""> €</label>
-                    </li>
-                    <li class="content-mega-menu">
-                      <label for="">Prix max: </label>
-                      <input type="number" placeholder="10000" min="0" />
-                      <label for=""> €</label>
-                    </li>
-                    <li>
-                      <button class="filters" type="button">Rechercher</button>
-                    </li>
-                  </form>
-                  </ul>
-                  <br>
-                </li>
-              </form>
-              </ul>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a href = "#">Ventes inversées</a>
-            </li>
-            <li>
-              <input id="searchbar" onkeyup="" type="text" name="search" placeholder="chercher une montre">
-            </li>
-            <li class="nav-item nav-drop">
-              <a href = "#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);transform: msFilter"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg></a>
-              <ul class="dropdown-menu">
-                <li class="dropdowm-menu-item"><a href="index.html">Se déconnecter</a></li>
-                <li class="dropdowm-menu-item"><a href="#">Créer une enchère</a></li>
-                <li class="dropdowm-menu-item"><a href="#">Mes enchères</a></li>
-                <li class="dropdowm-menu-item"><a href="#">Mes offres</a></li>
-              </ul>
-            </li>
+    <header>
+      <a class="logo" href="#">FSPM</a>
+      <nav>
+          <ul>
+              <li class="nav-item"><a href="index.html">ACCUEIL</a></li>
+              <li class="nav-item"><a href="#">FILTRES ﹀</a></li>
+              <li class="nav-item"><a href="#">VENTES INVERSEES</a></li>
+              <li><input class="searchbar" onkeyup="" type="text" name="search" placeholder="chercher une montre"></li>
+              <li class="user"><a class="user-icon" onclick="toggleMenu()" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);transform: msFilter"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg></a>
+                  <div class="sub-menu-wrap" id="subMenu">
+                      <div class="sub-menu">
+                          <div class="user-info">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);transform: msFilter"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                              <h3>User</h3> <!--TO DO mettre le nom du user connecté en backend -->
+                          </div>
+                          <hr>
+                          <div class="sub-menu-item">
+                              <a class="sub-menu-link" href="index.html">se déconnecter</a>
+                              <a class="sub-menu-link" href="">créer une enchère</a>
+                              <a class="sub-menu-link" href="">mes enchères</a>
+                              <a class="sub-menu-link" href="">mes offres</a>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </li>
           </ul>
       </nav>
-    </div>
-
+  </header>
     <section class = "product-display">
             <div class="card">
               <div class="imgBx">
@@ -270,5 +159,11 @@
                 </div>
               </div>
     </section>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+      function toggleMenu() {
+          subMenu.classList.toggle("open-menu");
+      }
+    </script>
   </body>
 </html>
