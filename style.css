@@ -154,10 +154,8 @@ input {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	margin: 8px 0;
 }
-.terms-item {
-	margin: 0 5px;
-} 
 .terms input {
 	width: 13px;
 	height: 13px;
