@@ -619,10 +619,11 @@ nav a {
 .col ul{
 	display: flex;
 	flex-direction: column;
+	gap: 5px;
 }
 .col li {
 	display: flex;
-	gap: 8px;
+	gap: 12px;
 	font-weight: 300
 }
 .cta {
