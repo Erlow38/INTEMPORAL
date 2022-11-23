@@ -108,6 +108,28 @@ form {
 
 /*end general*/
 
+/*beginning transition*/
+
+.transition-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--first-blue);
+    z-index: 101;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.transition-slide.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*end transition*/
+
 
 /*start scrollbar*/
 
@@ -387,8 +409,12 @@ body::-webkit-scrollbar-thumb {
 	left: 30%;
 	transform: translate(-50%, -50%) rotate(-25deg);
 	width: 300px;
+	height: 300px;
+	object-fit: cover;
 	z-index: 10;
 	transition: all 0.5s ease;
+	border-radius: 50%;
+
 }
 .product-display .card:hover .imgBx img {
 	opacity: 0;
@@ -583,7 +609,7 @@ nav a {
 .filter-menu-wrap {
 	position: absolute;
     top: 9%;
-    right: 10%;
+    right: 20%;
     width: 1000px;
     max-height: 0px;
     overflow: hidden;
@@ -639,6 +665,143 @@ nav a {
 /*end mega menu*/
 
 
+/*beginning slideshow*/
+
+.slide-show {
+	position: relative;
+	display: block;
+	width: 700px;
+	height: 700px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin: 70px 70px;
+}
+.slide-show:before, .slide-show:after {
+	content: '<';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: var(--second-blue);
+	color: var(--white);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+.slide-show:after {
+	content: '>';
+	left: auto;
+	right: 1rem;
+}
+.slide-image {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+.slide-image:focus {
+	outline: none;
+}
+.slide-image:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+.slide-image:checked:before {
+	display: none;
+	left: 1rem;
+}
+.slide-image:checked {
+	transform: translateX(0);
+	transition: transform 1s ease;
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+.slide-image:checked + input:before {
+	left: -3rem;
+}
+.slide-image:checked + input ~ input:before {
+	display: none;
+}
+
+/*end slide show*/
+
+
+/*beginning auction info*/
+
+.auction-info-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.auction-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+	width: 50%;
+	height: 700px;
+	margin-right: 70px;
+	padding: 30px;
+	border-radius: 5px;
+}
+.auction-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	color: var(--white);
+	background-color: var(--first-blue);
+	border-radius: 5px;
+}
+.auction-button:hover {
+	background-color: var(--second-blue);
+} 
+.auction-button:active {
+	transform: scale(0.95);
+}
+.auction-time {
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.auction-info {
+	font-weight: 400;
+	font-size: 16px;
+	text-align: justify;
+}
+.auction-price {
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/*end auction info*/
+
+
 /*mobile version*/
 
 @media screen and (max-width: 992px) {
@@ -657,5 +820,38 @@ nav a {
 	.filter-menu-wrap {
 		top: 4%;
 		right: 0%;
+	}
+	/*slide show*/
+	.slide-show:before, .slide-show:after {
+		width: 4rem;
+		height: 4rem;
+		font-size: 30px;
+	}
+	/*auction info*/
+	.auction-info-container {
+		flex-direction: column;
+	}
+	.auction-content {
+		width: 100%;
+		margin-right: 0;
+	}
+	.auction-content h2 {
+		font-size: 50px;
+	}
+	.auction-time {
+		font-size: 30px;
+	}
+	.auction-info {
+		font-size: 25px;
+		font-weight: 300;
+	}
+	.auction-price {
+		font-size: 25px;
+	}
+	.auction-button {
+		width: 80%;
+		height: 80px;
+		font-size: 30px;
+		margin-top: 20px;
 	}
 }

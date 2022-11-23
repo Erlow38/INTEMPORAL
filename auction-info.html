@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>shop-connected</title>
+    <link rel="shortcut icon" href="img/watche.png" type="image/png">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body class="body-shop">
+    <div class="transition transition-slide is-active"></div>
+    <header>
+      <a class="logo" href="shop-connected.html">FSPM</a>
+      <nav>
+          <ul class="nav-container">
+              <li class="nav-item"><a href="shop-connected.html">ACCUEIL</a></li>
+              <li class="nav-item"><a class="filter" onclick="toggleMenuFilter()" href="#">FILTRES ﹀</a>
+                <div class="filter-menu-wrap" id="subMenuFilter">
+                  <div class="filter-menu">
+                    <div class="menu_container">
+                      <div class="col">
+                        <h2>Catégories</h2>
+                        <select name="categorie" id="categorie">
+                          <option value="aaa">--Catégorie--</option>
+                          <option value="aaa">Mécanique</option>
+                          <option value="aaa">Automatique</option>
+                          <option value="aaa">Quartz</option>
+                        </select>
+                        <h2>Matériaux</h2>
+                        <ul>
+                          <li><input type="checkbox" name="" id="Acier" /><label for="Acier">Acier</label></li>
+                          <li><input type="checkbox" name="" id="Argent" /><label for="Argent">Argent</label></li>
+                          <li><input type="checkbox" name="" id="Or" /><label for="Or">Or</label></li>
+                          <li><input type="checkbox" name="" id="Ceramique" /><label for="Ceramique">Céramique</label></li>
+                          <li><input type="checkbox" name="" id="Diamants" /><label for="Diamants">Diamants</label></li>
+                        </ul>
+                        <h2>Prix</h2>
+                        <input type="number" name="price" id="price" placeholder="Prix max" min="0" />
+                        <input type="number" name="price" id="price" placeholder="Prix min" min="0" />
+                      </div>
+                      <div class="col">
+                        <h2>Marques</h2>
+                        <select name="marque" id="marque">
+                          <option value="aaa">--Marque--</option>
+                          <option value="aaa">aaa</option>
+                          <option value="aaa">aaa</option>
+                          <option value="aaa">aaa</option>
+                          <option value="aaa">aaa</option>
+                          <option value="aaa">aaa</option>
+                        </select>
+                        <h2>Complications</h2>
+                        <ul>
+                          <li><input type="checkbox" name="" id="1" /><label for="1">Quantième perpétuel</label></li>
+                          <li><input type="checkbox" name="" id="2" /><label for="2">Quantième</label></li>
+                          <li><input type="checkbox" name="" id="3" /><label for="3">etc</label></li>
+                          <li><input type="checkbox" name="" id="4" /><label for="4">etc</label></li>
+                          <li><input type="checkbox" name="" id="5" /><label for="5">etc</label></li>
+                        </ul>
+                        <button class="cta">Rechercher</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a href="#">VENTES INVERSÉES</a></li>
+              <li><input class="searchbar" onkeyup="" type="text" name="search" placeholder="chercher une montre"></li>
+              <li class="user"><a class="user-icon" onclick="toggleMenu()" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);transform: msFilter"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg></a>
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                      <div class="user-info">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);transform: msFilter"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                          <h3>User</h3> <!--TO DO mettre le nom du user connecté en backend -->
+                      </div>
+                      <hr>
+                      <div class="sub-menu-item">
+                          <a class="sub-menu-link" href="index.html">se déconnecter</a>
+                          <a class="sub-menu-link" href="">créer une enchère</a>
+                          <a class="sub-menu-link" href="">mes enchères</a>
+                          <a class="sub-menu-link" href="">mes offres</a>
+                      </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <div class="auction-info-container">
+    <div class="slide-show">
+        <input class="slide-image" checked type="radio" name="s" style="background-image: url('https://images.pexels.com/photos/236900/pexels-photo-236900.jpeg?cs=srgb&dl=pexels-anthony-derosa-236900.jpg&fm=jpg');">
+        <input class="slide-image" type="radio" name="s" style="background-image: url('https://cdn.shopify.com/s/files/1/0314/1333/products/montre-chronographe-homme-citadine-blanc_1200x.jpg?v=1649666007');">
+        <input class="slide-image" type="radio" name="s" style="background-image: url('https://cdn.shopify.com/s/files/1/0314/1333/products/montre-homme-francaise-charlie-horizon-w16_1200x.jpg?v=1642087366');">
+        <input class="slide-image" type="radio" name="s" style="background-image: url('https://cdn.shopify.com/s/files/1/0314/1333/products/montre-automatique-homme-calendrier-blanc-01_300x.jpg?v=1663573452');">
+        <input class="slide-image" type="radio" name="s" style="background-image: url('https://cdn.shopify.com/s/files/1/0314/1333/products/montre-automatique-hommeportee-INITIAL-Calendrier-blanc-mick-marron-carre_resultat_300x.jpg?v=1663573452');">
+    </div>
+    <div class="auction-content">
+        <h2>Rolex Daytona 2019</h2>
+        <p class="auction-time">Temps restant : 12h 12min 2s</p>
+        <p class="auction-info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
+        <p class="auction-price">Offre actuelle : 120 euros</p>
+        <a class="auction-button" href="#">ENCHÉRIR</a>
+    </div>
+  </div>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+    }
+
+    let subMenuFilter = document.getElementById("subMenuFilter");
+    function toggleMenuFilter() {
+        subMenuFilter.classList.toggle("open-menu-filter");
+    }
+  </script>
+  <script src="js/transition.js"></script>
+</body>
+</html>
