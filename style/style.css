@@ -407,7 +407,7 @@ body::-webkit-scrollbar-thumb {
 	position: absolute;
 	top: 25%;
 	left: 30%;
-	transform: translate(-50%, -50%) rotate(-25deg);
+	transform: translate(-50%, -50%);
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
@@ -543,7 +543,6 @@ nav a {
     color: var(--white);
     font-weight: 600;
     font-size: 1rem;
-
 	display: flex;
     justify-content: center;
     flex-direction: column;
@@ -805,6 +804,39 @@ nav a {
 /*mobile version*/
 
 @media screen and (max-width: 992px) {
+	/*login*/
+	.container {
+		width: 90%;
+		height: 40%;
+	}
+	.container h1 {
+		font-size: 50px;
+	}
+	.container input {
+		font-size: 20px;
+	}
+	.container p {
+		font-size: 20px;
+	}
+	.container button {
+		font-size: 23px;
+	}
+	/*nav*/
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo {
+		font-size: 50px;
+	}
+	.nav-item a {
+		font-size: 25px
+	}
+	/*card*/
+	.contentBx a {
+		font-size: 23px;
+	}
 	/*cgu*/
 	.cgu-container {
 		width: 90%;
@@ -814,12 +846,24 @@ nav a {
 	}
 	/*user menu*/
 	.sub-menu-wrap {
-		top : 4%;
+		top : 7%;
+	}
+	.sub-menu-wrap.open-menu {
+		max-height: 500px;
+	}
+	.sub-menu h3 {
+		font-size: 30px;
+	}
+	.sub-menu a {
+		font-size: 23px;
 	}
 	/*filter menu*/
 	.filter-menu-wrap {
-		top: 4%;
-		right: 0%;
+		top: 7%;
+		right: 0;
+	}
+	.col h2 {
+		font-size: 23px;
 	}
 	/*slide show*/
 	.slide-show:before, .slide-show:after {
