@@ -653,4 +653,9 @@ nav a {
 	.sub-menu-wrap {
 		top : 4%;
 	}
+	/*filter menu*/
+	.filter-menu-wrap {
+		top: 4%;
+		right: 0%;
+	}
 }
