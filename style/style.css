@@ -313,20 +313,13 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--white);
 	margin-bottom: 40px;
 }
-.cgu-container .accept {
+.cgu-container .cgu-button {
 	background-color: var(--first-blue);
 	color: var(--white);
+	width: 300px;
 }
-.cgu-container .accept:hover {
+.cgu-container .cgu-button:hover {
 	background-color: var(--black);
-}
-.cgu-container .reject {
-	background-color: var(--white);
-	color: var(--first-blue);
-}
-.cgu-container .reject:hover {
-	background-color: #ddd;
-	color: var(--black);
 }
 .cgu-button-container {
 	display: flex;
@@ -516,7 +509,7 @@ body::-webkit-scrollbar-thumb {
 /*end card, product display*/
 
 
-/*beginning navbar, user menu*/
+/*beginning navbar*/
 
 nav {
     z-index: 1000;
@@ -557,6 +550,12 @@ nav a {
 .nav-item:hover a {
     color: #bbb;
 }
+
+/*end navbar*/
+
+
+/*beginning user menu*/
+
 .sub-menu-wrap {
     position: absolute;
     top: 9%;
@@ -600,7 +599,7 @@ nav a {
     background-color: var(--first-blue);
 }
 
-/*end navbar, user menu*/
+/*end user menu*/
 
 
 /*beginning mega menu*/
@@ -806,20 +805,26 @@ nav a {
 @media screen and (max-width: 992px) {
 	/*login*/
 	.container {
-		width: 90%;
-		height: 40%;
+		width: 100%;
+		height: 80%;
 	}
 	.container h1 {
-		font-size: 50px;
+		font-size: 80px;
 	}
 	.container input {
-		font-size: 20px;
+		font-size: 40px;
 	}
 	.container p {
-		font-size: 20px;
+		font-size: 30px;
+		line-height: 30px;
 	}
 	.container button {
-		font-size: 23px;
+		font-size: 35px;
+		width: 400px;
+		height: 100px;
+	}
+	.forgot-password {
+		font-size: 30px;
 	}
 	/*nav*/
 	header {
@@ -828,25 +833,80 @@ nav a {
 		align-items: center;
 	}
 	.logo {
-		font-size: 50px;
+		font-size: 60px;
+		margin: 30px 0;
 	}
 	.nav-item a {
-		font-size: 25px
+		font-size: 30px
+	}
+	nav svg {
+		width: 90px;
+		height: 90px;
+	}
+	nav .searchbar {
+		font-size: 30px;
 	}
 	/*card*/
 	.contentBx a {
-		font-size: 23px;
+		font-size: 50px;
+	}
+	.product-display .card {
+		width: 740px;
+		height: 1000px;
+	}
+	.product-display .card .imgBx img {
+		width: 700px;
+		height: 700px;
+	}
+	.product-display .card .contentBx .price {
+		color: var(--black);
+		font-size: 48px;
+		padding: 25px;
+		z-index: 100;
+		position: absolute;
+		top: -900%;
+		right: 0%;
+	}
+	.product-display .card:after {
+		top: 30%;
+		left: -20%;
+		font-size: 30em;
+	}
+	.product-display .card .contentBx .time {
+		font-size: 36px;
+		top: -150%;
+	}
+	.product-display .card:hover .contentBx h2 {
+		position: absolute;
+		top : -100%;
+		font-size: 70px;
+	}
+	.product-display .card .contentBx h2 {
+		position: absolute;
+		top : -100%;
+		width: 100%;
+		font-size: 60px;
+	}
+	.product-display .card:hover .contentBx .info {
+		display: none;
+		font-size: 36px;
+		line-height: 40px;
 	}
 	/*cgu*/
 	.cgu-container {
 		width: 90%;
 	}
-	.cgu-button-container button {
+	.cgu-container h2 {
+		font-size: 50px;
+	}
+	.cgu-button{
 		font-size: 30px;
+		height: 120px;
 	}
 	/*user menu*/
 	.sub-menu-wrap {
-		top : 7%;
+		top : 11%;
+		right: 6%;
 	}
 	.sub-menu-wrap.open-menu {
 		max-height: 500px;
@@ -855,15 +915,30 @@ nav a {
 		font-size: 30px;
 	}
 	.sub-menu a {
-		font-size: 23px;
+		font-size: 24px;
 	}
 	/*filter menu*/
 	.filter-menu-wrap {
-		top: 7%;
+		top: 12%;
 		right: 0;
+		background-color: #415A77;
+		display: flex;
+		justify-content: left;
 	}
 	.col h2 {
-		font-size: 23px;
+		font-size: 30px;
+	}
+	.col label {
+		font-size: 22px;
+	}
+	.col input {
+		font-size: 20px;
+	}
+	.col button {
+		font-size: 20px;
+	}
+	.col select {
+		font-size: 20px;
 	}
 	/*slide show*/
 	.slide-show:before, .slide-show:after {
@@ -880,22 +955,27 @@ nav a {
 		margin-right: 0;
 	}
 	.auction-content h2 {
-		font-size: 50px;
+		font-size: 70px;
 	}
 	.auction-time {
-		font-size: 30px;
+		font-size: 40px;
+		text-align: center;
+		margin-bottom: 60px;
 	}
 	.auction-info {
-		font-size: 25px;
+		font-size: 35px;
 		font-weight: 300;
+		line-height: 35px;
 	}
 	.auction-price {
-		font-size: 25px;
+		font-size: 35px;
+		margin-top: 50px;
 	}
 	.auction-button {
 		width: 80%;
 		height: 80px;
-		font-size: 30px;
+		font-size: 40px;
 		margin-top: 20px;
+		text-align: center;
 	}
 }

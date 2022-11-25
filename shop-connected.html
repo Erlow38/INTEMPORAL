@@ -19,26 +19,6 @@
                   <div class="filter-menu">
                     <div class="menu_container">
                       <div class="col">
-                        <h2>Catégories</h2>
-                        <select name="categorie" id="categorie">
-                          <option value="aaa">--Catégorie--</option>
-                          <option value="aaa">Mécanique</option>
-                          <option value="aaa">Automatique</option>
-                          <option value="aaa">Quartz</option>
-                        </select>
-                        <h2>Matériaux</h2>
-                        <ul>
-                          <li><input type="checkbox" name="" id="Acier" /><label for="Acier">Acier</label></li>
-                          <li><input type="checkbox" name="" id="Argent" /><label for="Argent">Argent</label></li>
-                          <li><input type="checkbox" name="" id="Or" /><label for="Or">Or</label></li>
-                          <li><input type="checkbox" name="" id="Ceramique" /><label for="Ceramique">Céramique</label></li>
-                          <li><input type="checkbox" name="" id="Diamants" /><label for="Diamants">Diamants</label></li>
-                        </ul>
-                        <h2>Prix</h2>
-                        <input type="number" name="price" id="price" placeholder="Prix max" min="0" />
-                        <input type="number" name="price" id="price" placeholder="Prix min" min="0" />
-                      </div>
-                      <div class="col">
                         <h2>Marques</h2>
                         <select name="marque" id="marque">
                           <option value="aaa">--Marque--</option>
@@ -48,13 +28,41 @@
                           <option value="aaa">aaa</option>
                           <option value="aaa">aaa</option>
                         </select>
+                        <h2>Catégories</h2>
+                        <select name="categorie" id="categorie">
+                          <option value="aaa">--Catégorie--</option>
+                          <option value="aaa">Mécanique</option>
+                          <option value="aaa">Automatique</option>
+                          <option value="aaa">Quartz</option>
+                        </select>
+                        <ul>
+                          <li><input type="checkbox" name="" id="limite" /><label for="limitee">Éditions limitées</label></li>
+                          <li><input type="checkbox" name="" id="homme" /><label for="homme">Montre pour homme</label></li>
+                          <li><input type="checkbox" name="" id="femme" /><label for="femme">Montre pour femme</label></li>
+                        </ul>
                         <h2>Complications</h2>
                         <ul>
-                          <li><input type="checkbox" name="" id="1" /><label for="1">Quantième perpétuel</label></li>
-                          <li><input type="checkbox" name="" id="2" /><label for="2">Quantième</label></li>
-                          <li><input type="checkbox" name="" id="3" /><label for="3">etc</label></li>
-                          <li><input type="checkbox" name="" id="4" /><label for="4">etc</label></li>
-                          <li><input type="checkbox" name="" id="5" /><label for="5">etc</label></li>
+                          <li><input type="checkbox" name="quantieme" id="1" /><label for="1">Quantième</label></li>
+                          <li><input type="checkbox" name="chronographe" id="2" /><label for="2">Chronographe</label></li>
+                          <li><input type="checkbox" name="tourbillon" id="3" /><label for="3">Tourbillon</label></li>
+                          <li><input type="checkbox" name="gmt" id="4" /><label for="4">GMT</label></li>
+                          <li><input type="checkbox" name="phase" id="5" /><label for="5">Phase de lune</label></li>
+                          <li><input type="checkbox" name="reserve" id="6" /><label for="5">Réserve de marche</label></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h2>Matériaux</h2>
+                        <ul>
+                          <li><input type="checkbox" name="" id="Acier" /><label for="Acier">Acier</label></li>
+                          <li><input type="checkbox" name="" id="Argent" /><label for="Argent">Argent</label></li>
+                          <li><input type="checkbox" name="" id="Or" /><label for="Or">Or</label></li>
+                          <li><input type="checkbox" name="" id="Ceramique" /><label for="Ceramique">Céramique</label></li>
+                          <li><input type="checkbox" name="" id="Diamants" /><label for="Diamants">Diamants</label></li>
+                        </ul>
+                        <h2>Prix</h2>
+                        <ul>
+                          <li><input type="number" name="price" id="price" placeholder="Prix max" min="0" /></li>
+                          <li><input type="number" name="price" id="price" placeholder="Prix min" min="0" /></li>
                         </ul>
                         <button class="cta">Rechercher</button>
                       </div>
