@@ -906,16 +906,17 @@ nav a {
 	/*user menu*/
 	.sub-menu-wrap {
 		top : 11%;
-		right: 6%;
+		right: 4%;
+		width: 450px;
 	}
 	.sub-menu-wrap.open-menu {
 		max-height: 500px;
 	}
 	.sub-menu h3 {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.sub-menu a {
-		font-size: 24px;
+		font-size: 35px;
 	}
 	/*filter menu*/
 	.filter-menu-wrap {
@@ -925,20 +926,23 @@ nav a {
 		display: flex;
 		justify-content: left;
 	}
+	.filter-menu-wrap.open-menu-filter {
+		max-height: 1000px;
+	}
 	.col h2 {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.col label {
-		font-size: 22px;
+		font-size: 28px;
 	}
 	.col input {
-		font-size: 20px;
+		font-size: 28px;
 	}
 	.col button {
-		font-size: 20px;
+		font-size: 28px;
 	}
 	.col select {
-		font-size: 20px;
+		font-size: 28px;
 	}
 	/*slide show*/
 	.slide-show:before, .slide-show:after {
