@@ -905,7 +905,7 @@ nav a {
 	}
 	/*user menu*/
 	.sub-menu-wrap {
-		top : 11%;
+		top : 11.5%;
 		right: 4%;
 		width: 450px;
 	}
@@ -918,9 +918,13 @@ nav a {
 	.sub-menu a {
 		font-size: 35px;
 	}
+	.user-info svg {
+		width: 90px;
+		height: 90px;
+	}
 	/*filter menu*/
 	.filter-menu-wrap {
-		top: 12%;
+		top: 12.1%;
 		right: 0;
 		background-color: #415A77;
 		display: flex;
