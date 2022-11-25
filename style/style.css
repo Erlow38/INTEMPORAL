@@ -650,7 +650,7 @@ nav a {
 	gap: 12px;
 	font-weight: 300
 }
-.cta {
+.filter-button {
 	border: none;
 	outline: none;
 	padding: 10px 24px;
@@ -942,7 +942,7 @@ nav a {
 	.col input {
 		font-size: 28px;
 	}
-	.col button {
+	.col .filter-button {
 		font-size: 28px;
 	}
 	.col select {
