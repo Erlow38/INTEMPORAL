@@ -374,7 +374,7 @@ body::-webkit-scrollbar-thumb {
   	clip-path: circle(150px at 80% -20%);
 }
 .product-display .card:after {
-	content: 'FSPM';
+	content: 'INTEMPORAL';
 	position: absolute;
 	top: 30%;
 	left: -20%;
