@@ -17,53 +17,58 @@
               <li class="nav-item"><a class="filter" onclick="toggleMenuFilter()" href="#">FILTRES ﹀</a>
                 <div class="filter-menu-wrap" id="subMenuFilter">
                   <div class="filter-menu">
-                    <div class="menu_container">
-                      <div class="col">
-                        <h2>Marques</h2>
-                        <select name="marque" id="marque">
-                          <option value="aaa">--Marque--</option>
-                          <option value="aaa">aaa</option>
-                          <option value="aaa">aaa</option>
-                          <option value="aaa">aaa</option>
-                          <option value="aaa">aaa</option>
-                          <option value="aaa">aaa</option>
-                        </select>
-                        <h2>Catégories</h2>
-                        <select name="categorie" id="categorie">
-                          <option value="aaa">--Catégorie--</option>
-                          <option value="aaa">Mécanique</option>
-                          <option value="aaa">Automatique</option>
-                          <option value="aaa">Quartz</option>
-                        </select>
-                        <ul>
-                          <li><input type="checkbox" name="limitee" id="limitee" /><label for="limitee">Éditions limitées</label></li>
-                          <li><input type="checkbox" name="homme" id="homme" /><label for="homme">Montre pour homme</label></li>
-                          <li><input type="checkbox" name="femme" id="femme" /><label for="femme">Montre pour femme</label></li>
-                        </ul>
-                        <h2>Complications</h2>
-                        <ul>
-                          <li><input type="checkbox" name="quantieme" id="quantieme" /><label for="quantieme">Quantième</label></li>
-                          <li><input type="checkbox" name="chronographe" id="chronographe" /><label for="chronographe">Chronographe</label></li>
-                          <li><input type="checkbox" name="tourbillon" id="tourbillon" /><label for="tourbillon">Tourbillon</label></li>
-                          <li><input type="checkbox" name="gmt" id="gmt" /><label for="gmt">GMT</label></li>
-                          <li><input type="checkbox" name="phase" id="phase" /><label for="phase">Phase de lune</label></li>
-                          <li><input type="checkbox" name="reserve" id="reserve" /><label for="reserve">Réserve de marche</label></li>
-                        </ul>
+                    <div class="menu-container">
+                      <div class="filter-container">
+                        <div class="col">
+                          <h2>Catégories</h2>
+                          <select name="categorie" id="categorie">
+                            <option value="aaa">--Catégorie--</option>
+                            <option value="aaa">Mécanique</option>
+                            <option value="aaa">Automatique</option>
+                            <option value="aaa">Quartz</option>
+                          </select>
+                          <h2>Sous-catégories</h2>
+                          <ul>
+                            <li><input type="checkbox" name="limitee" id="limitee" /><label for="limitee">Éditions limitées</label></li>
+                            <li><input type="checkbox" name="homme" id="homme" /><label for="homme">Montre pour homme</label></li>
+                            <li><input type="checkbox" name="femme" id="femme" /><label for="femme">Montre pour femme</label></li>
+                          </ul>
+                          <h2>Complications</h2>
+                          <ul>
+                            <li><input type="checkbox" name="quantieme" id="quantieme" /><label for="quantieme">Quantième</label></li>
+                            <li><input type="checkbox" name="chronographe" id="chronographe" /><label for="chronographe">Chronographe</label></li>
+                            <li><input type="checkbox" name="tourbillon" id="tourbillon" /><label for="tourbillon">Tourbillon</label></li>
+                            <li><input type="checkbox" name="gmt" id="gmt" /><label for="gmt">GMT</label></li>
+                            <li><input type="checkbox" name="phase" id="phase" /><label for="phase">Phase de lune</label></li>
+                            <li><input type="checkbox" name="reserve" id="reserve" /><label for="reserve">Réserve de marche</label></li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <h2>Marques</h2>
+                          <select name="marque" id="marque">
+                            <option value="aaa">--Marque--</option>
+                            <option value="aaa">aaa</option>
+                            <option value="aaa">aaa</option>
+                            <option value="aaa">aaa</option>
+                            <option value="aaa">aaa</option>
+                            <option value="aaa">aaa</option>
+                          </select>
+                          <h2>Matériaux</h2>
+                          <ul>
+                            <li><input type="checkbox" name="" id="acier" /><label for="acier">Acier</label></li>
+                            <li><input type="checkbox" name="" id="argent" /><label for="argent">Argent</label></li>
+                            <li><input type="checkbox" name="" id="or" /><label for="or">Or</label></li>
+                            <li><input type="checkbox" name="" id="ceramique" /><label for="ceramique">Céramique</label></li>
+                            <li><input type="checkbox" name="" id="diamants" /><label for="diamants">Diamants</label></li>
+                          </ul>
+                          <h2>Prix</h2>
+                          <ul>
+                            <li><input type="number" name="priceMin" id="priceMin" placeholder="Prix min" min="0" /></li>
+                            <li><input type="number" name="priceMax" id="priceMax" placeholder="Prix max" min="0" /></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col">
-                        <h2>Matériaux</h2>
-                        <ul>
-                          <li><input type="checkbox" name="" id="acier" /><label for="acier">Acier</label></li>
-                          <li><input type="checkbox" name="" id="argent" /><label for="argent">Argent</label></li>
-                          <li><input type="checkbox" name="" id="or" /><label for="or">Or</label></li>
-                          <li><input type="checkbox" name="" id="ceramique" /><label for="ceramique">Céramique</label></li>
-                          <li><input type="checkbox" name="" id="diamants" /><label for="diamants">Diamants</label></li>
-                        </ul>
-                        <h2>Prix</h2>
-                        <ul>
-                          <li><input type="number" name="priceMin" id="priceMin" placeholder="Prix min" min="0" /></li>
-                          <li><input type="number" name="priceMax" id="priceMax" placeholder="Prix max" min="0" /></li>
-                        </ul>
+                      <div class="filter-button-container">
                         <button class="filter-button">Rechercher</button>
                       </div>
                     </div>
@@ -92,6 +97,7 @@
           </ul>
       </nav>
   </header>
+  <p class="ariane"><a href="shop-connected.html">Accueil > </a><a href="#">Information de l'enchère</a></p>
   <div class="auction-info-container">
     <div class="slide-show">
         <input class="slide-image" checked type="radio" name="s" style="background-image: url('https://images.pexels.com/photos/236900/pexels-photo-236900.jpeg?cs=srgb&dl=pexels-anthony-derosa-236900.jpg&fm=jpg');">

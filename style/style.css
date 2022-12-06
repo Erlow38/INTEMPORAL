@@ -553,9 +553,27 @@ nav a {
 }
 .nav-item a {
     color: var(--white);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .nav-item:hover a {
     color: #bbb;
+}
+.ariane {
+	padding: 12px 30px;
+	width: 30%;
+	background-color: var(--white);
+	border-radius: 0 0 20px 0;
+}
+.ariane a {
+	color: var(--black);
+	font-weight: 400;
+	font-size: 16px;
+}
+.ariane a:hover {
+	color: var(--second-blue);
 }
 
 /*end navbar*/
@@ -623,12 +641,16 @@ nav a {
 .filter-menu-wrap.open-menu-filter {
     max-height: 900px;
 }
-.menu_container {
+.menu-container {
 	width: 45vw;
 	background: #415a77;
 	display: flex;
 	column-gap: 16px;
 	border-radius: 5px;
+	flex-direction: column;
+}
+.filter-container {
+	display: flex;
 }
 .col {
 	flex: 1;
@@ -657,12 +679,17 @@ nav a {
 	gap: 12px;
 	font-weight: 300
 }
+.filter-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .filter-button {
 	border: none;
 	outline: none;
-	padding: 10px 24px;
+	padding: 10px 74px;
+	margin-bottom: 20px;
 	font-size: 16px;
-	width: 100%;
 	color: #fff;
 	background: #1a1a1a;
 }
@@ -853,6 +880,12 @@ nav a {
 	nav .searchbar {
 		font-size: 30px;
 	}
+	.ariane {
+		width: 100%;
+	}
+	.ariane a {
+		font-size: 30px;
+	}
 	/*card*/
 	.contentBx a {
 		font-size: 50px;
@@ -945,7 +978,7 @@ nav a {
 		justify-content: left;
 	}
 	.filter-menu-wrap.open-menu-filter {
-		max-height: 1000px;
+		max-height: 1100px;
 	}
 	.col h2 {
 		font-size: 40px;
@@ -956,7 +989,7 @@ nav a {
 	.col input {
 		font-size: 28px;
 	}
-	.col .filter-button {
+	.filter-button {
 		font-size: 28px;
 	}
 	.col select {
