@@ -309,6 +309,15 @@ body::-webkit-scrollbar-thumb {
 	margin: 40px;
 	text-align: justify;
 }
+.accept-cgu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.accept-cgu {
+	margin-right: 10px;
+}
 .cgu-container form {
 	background-color: var(--white);
 	margin-bottom: 40px;
@@ -896,6 +905,13 @@ nav a {
 	}
 	.cgu-container h2 {
 		font-size: 50px;
+	}
+	.accept-cgu-container label {
+		font-size: 30px;
+	}
+	.accept-cgu {
+		width: 30px;
+		height: 30px;
 	}
 	.cgu-button{
 		font-size: 35px;
