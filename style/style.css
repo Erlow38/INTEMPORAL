@@ -643,7 +643,7 @@ nav a {
 }
 .menu-container {
 	width: 45vw;
-	background: #415a77;
+	background: var(--second-blue);
 	display: flex;
 	column-gap: 16px;
 	border-radius: 5px;
