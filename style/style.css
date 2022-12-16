@@ -712,7 +712,6 @@ nav a {
     max-height: 900px;
 }
 .menu-container {
-	width: 45vw;
 	background: var(--second-blue);
 	display: flex;
 	column-gap: 16px;
@@ -1054,8 +1053,8 @@ nav a {
 		font-size: 40px;
 	}
 	.container p {
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 40px;
 	}
 	.container button {
 		font-size: 35px;
@@ -1063,7 +1062,7 @@ nav a {
 		height: 100px;
 	}
 	.forgot-password {
-		font-size: 30px;
+		font-size: 35px;
 	}
 	/*nav*/
 	header {
@@ -1079,7 +1078,7 @@ nav a {
 		font-size: 18px;
 	}
 	.nav-item a {
-		font-size: 30px
+		font-size: 35px
 	}
 	nav svg {
 		width: 90px;
@@ -1092,7 +1091,7 @@ nav a {
 		width: 100%;
 	}
 	.ariane a {
-		font-size: 30px;
+		font-size: 35px;
 	}
 	/*card*/
 	.contentBx a {
@@ -1183,22 +1182,22 @@ nav a {
 		right: 0;
 		background-color: #415A77;
 		display: flex;
-		justify-content: left;
+		justify-content: center;
 	}
 	.filter-menu-wrap.open-menu-filter {
 		max-height: 1100px;
 	}
 	.col h2 {
-		font-size: 40px;
+		font-size: 50px;
 	}
 	.col label {
-		font-size: 28px;
+		font-size: 35px;
 	}
 	.col input {
-		font-size: 28px;
+		font-size: 35px;
 	}
 	.filter-button {
-		font-size: 28px;
+		font-size: 35px;
 	}
 	.col select {
 		font-size: 28px;
@@ -1272,6 +1271,9 @@ nav a {
 	}
 	.col-create {
 		width: 100%;
+	}
+	input[type=checkbox] {
+		width: 25px;
 	}
 	/*modal*/
 	.modal p {
