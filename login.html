@@ -23,7 +23,7 @@
 				<h1>Conexion</h1>
 				<input type="email" placeholder="Email" />
 				<input type="password" placeholder="Mot de passe" />
-				<a href="#" class="forgot-password" >Mot de passe oublié ?</a>
+				<a href="#open-modal" class="forgot-password" >Mot de passe oublié ?</a>
 				<button>Se connecter</button>
 			</form>
 		</div>
@@ -42,7 +42,17 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
+	<div id="open-modal" class="modal">
+		<div class="modal-content">
+			<h2>Réinitialiser votre mot de passe</h2>
+			<p>Saisissez l'email associé à votre compte INTEMPORAL et nous vous enverrons les instructions pour réinitialiser votre mot de passe.</p>
+			<h2>Adresse email</h2>
+			<input type="email" placeholder="Email" />
+			<button>Envoyer</button>
+			<a href="#" class="modal-close">&times;</a>
+		</div>
+	</div>
+	<script src="js/login.js"></script>
 	<script src="js/transition.js"></script>
 </body>
 </html>

@@ -94,7 +94,7 @@
                       <hr>
                       <div class="sub-menu-item">
                           <a class="sub-menu-link" href="index.html">Se déconnecter</a>
-                          <a class="sub-menu-link" href="create-auction.html">Créer une enchère</a>
+                          <a class="sub-menu-link" href="">Créer une enchère</a>
                           <a class="sub-menu-link" href="">Mes enchères</a>
                           <a class="sub-menu-link" href="">Mes offres</a>
                       </div>
@@ -104,140 +104,126 @@
           </ul>
       </nav>
   </header>
-    <section class = "product-display">
-            <div class="card">
-              <div class="imgBx">
-                <img src="https://www.rienasemettre.fr/wp-content/uploads/2019/12/guide-montre-homme-tendance.jpg">
-              </div>
-              <div class="contentBx">
-                <h2>Rolex Daytona 2019</h2>
-                <p class="time">12h 12min 2s</p>
-                <br>
-                <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                <p class="price">120 euros</p>
-                <a href="auction-info.html">Accéder à l'enchère</a>
-              </div>
+  <div class="create-container">
+    <div class="create-content">
+        <h1>Nouvelle enchère</h1>
+        <form class="auction-form">
+            <div class="create-form">
+                <div class="col-create">
+                    <div class="create-form-item">
+                        <h2>Marque *</h2>
+                        <input type="text" name="brand" id="brand" placeholder="Marque" required>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Modèle *</h2>
+                        <input type="text" name="model" id="model" placeholder="Modèle" required>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Référence *</h2>
+                        <input type="text" name="ref" id="ref" placeholder="Référence" required>
+                    </div>
+                </div>
+                <div class="col-create">
+                    <div class="create-form-item">
+                        <h2>Catégorie *</h2>
+                        <select name="categorie-create" id="categorie-create" required>
+                            <option value="aaa">--Catégorie--</option>
+                            <option value="aaa">Mécanique</option>
+                            <option value="aaa">Automatique</option>
+                            <option value="aaa">Quartz</option>
+                        </select>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Sous-catégories</h2>
+                          <ul>
+                            <li><input type="checkbox" name="limitee-create" id="limitee-create" /><label for="limitee-create">Éditions limitées</label></li>
+                            <li><input type="checkbox" name="homme-create" id="homme-create" /><label for="homme-create">Montre pour homme</label></li>
+                            <li><input type="checkbox" name="femme-create" id="femme-create" /><label for="femme-create">Montre pour femme</label></li>
+                        </ul>
+                    </div>
+                    <div class="create-form-item">  
+                        <h2>Complications</h2>
+                        <ul>
+                            <li><input type="checkbox" name="quantieme-create" id="quantieme-create" /><label for="quantieme-create">Quantième</label></li>
+                            <li><input type="checkbox" name="chronographe-create" id="chronographe-create" /><label for="chronographe-create">Chronographe</label></li>
+                            <li><input type="checkbox" name="tourbillon-create" id="tourbillon-create" /><label for="tourbillon-create">Tourbillon</label></li>
+                            <li><input type="checkbox" name="gmt-create" id="gmt-create" /><label for="gmt-create">GMT</label></li>
+                            <li><input type="checkbox" name="phase-create" id="phase-create" /><label for="phase-create">Phase de lune</label></li>
+                            <li><input type="checkbox" name="reserve-create" id="reserve-create" /><label for="reserve-create">Réserve de marche</label></li>
+                        </ul>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Matériaux</h2>
+                        <ul>
+                            <li><input type="checkbox" name="" id="acier-create" /><label for="acier-create">Acier</label></li>
+                            <li><input type="checkbox" name="" id="argent-create" /><label for="argent-create">Argent</label></li>
+                            <li><input type="checkbox" name="" id="or-create" /><label for="or-create">Or</label></li>
+                            <li><input type="checkbox" name="" id="ceramique-create" /><label for="ceramique-create">Céramique</label></li>
+                            <li><input type="checkbox" name="" id="diamants-create" /><label for="diamants-create">Diamants</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-create">
+                    <div class="create-form-item">
+                        <h2>Description raccourcie *</h2>
+                        <textarea name="description" id="description" cols="50" rows="100" placeholder="Description (max 150 charactères)" maxlength="150" required></textarea>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Description détaillée *</h2>
+                        <textarea name="description" id="description" cols="50" rows="100" placeholder="Description détaillée" required></textarea>
+                    </div>
+                </div>
+                <div class="col-create">
+                    <div class="create-form-item">
+                        <h2>Image principale *</h2>
+                        <input type="file" name="image" id="image" required>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Image secondaire</h2>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Image secondaire</h2>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Image secondaire</h2>
+                        <input type="file" name="image" id="image">
+                    </div>
+                </div>
+                <div class="col-create">
+                    <div class="create-form-item">
+                        <h2>Date de fin *</h2>
+                        <input type="date" name="date" id="date" min="" required>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Heure de fin *</h2>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div class="create-form-item">
+                        <h2>Prix de départ *</h2>
+                        <input type="number" name="price" id="price" placeholder="Prix de départ" min="0" required>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <div class="imgBx">
-                  <img src="https://www.cdiscount.com/pdt2/5/8/3/1/700x700/auc2008550158583/rw/kinyued-montre-homme-automatique-militaire-cuir.jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://gentlemanmoderne.com/wp-content/uploads/2019/12/montre-homme-comment-choisir-.jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Omega_%CF%80%CE%BB%CE%B1%CE%BD%CE%B5%CF%84_%CE%BF%CF%83%CE%B9%CE%B1%CE%BD.jpg/1200px-Omega_%CF%80%CE%BB%CE%B1%CE%BD%CE%B5%CF%84_%CE%BF%CF%83%CE%B9%CE%B1%CE%BD.jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://www.commeuncamion.com/content/uploads/2020/10/focusmontre-seiko-prestige.jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://freshmagparis.com/wp-content/uploads/2021/04/concordia-montre-plongee-homme-automatique-PoseBleucarre_2000x-1140x1140.jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://cdn.shopify.com/s/files/1/0314/1333/products/montre-chronographe-homme-citadine-blanc_1200x.jpg?v=1649666007">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="imgBx">
-                  <img src="https://images.pexels.com/photos/236900/pexels-photo-236900.jpeg?cs=srgb&dl=pexels-anthony-derosa-236900.jpg&fm=jpg">
-                </div>
-                <div class="contentBx">
-                  <h2>Rolex Daytona 2019</h2>
-                  <p class="time">12h 12min 2s</p>
-                  <br>
-                  <br>
-                  <p class="info">Une magnifique montre en acier avec un chronographe de haute qualité. Cette montre a été fabriquée en 2019 en suisse et vérifier par nos expert en 2022.</p>
-                  <br>
-                  <p class="price">120 euros</p>
-                  <a href="auction-info.html">Accéder à l'enchère</a>
-                </div>
-              </div>
-    </section>
-    <script>
-      let subMenu = document.getElementById("subMenu");
-      function toggleMenu() {
-          subMenu.classList.toggle("open-menu");
-      }
+            <p class="obligatory">* champs obligatoires</p>
+            <button>VALIDER</button>
+        </form>
+    </div>
+  </div>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+    }
 
-      let subMenuFilter = document.getElementById("subMenuFilter");
-      function toggleMenuFilter() {
-          subMenuFilter.classList.toggle("open-menu-filter");
-      }
-    </script>
-    <script src="js/transition.js"></script>
-    <script src="js/clock.js"></script>
-  </body>
+    let subMenuFilter = document.getElementById("subMenuFilter");
+    function toggleMenuFilter() {
+        subMenuFilter.classList.toggle("open-menu-filter");
+    }
+  </script>
+  <script src="js/transition.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/date.js"></script>
+</body>
 </html>

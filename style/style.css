@@ -46,12 +46,10 @@ a {
 }
 input:not([type='checkbox']) {
 	width: 100%;
-	padding: 6px 12px;
 	background-color: #ddd;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
-	width: 100%;
 }
 header {
     background-color: var(--first-blue);
@@ -279,6 +277,69 @@ body::-webkit-scrollbar-thumb {
 /*end login page*/
 
 
+/*beginning modal*/
+
+.modal {
+	position: absolute;
+	background: rgba(31, 31, 31, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: all .4s;
+	visibility: hidden;
+	opacity: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.modal p {
+	margin-top: 10px;
+	font-weight: 400;
+}
+.modal button {
+	margin-top: 40px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal button svg {
+	margin-left: 10px;
+}
+.modal h2 {
+	margin-bottom: 20px;
+}
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: var(--black);
+}
+.modal-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--white);
+	border-radius: 4px;
+	position: relative;
+	width: 500px;
+	max-width: 90%;
+	padding: 1.5em 2em;
+}
+
+/*end modal*/
+
+
 /*beginning cgu*/
 
 .body-cgu {
@@ -322,12 +383,12 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--white);
 	margin-bottom: 40px;
 }
-.cgu-container .cgu-button {
+.cgu-button {
 	background-color: var(--first-blue);
 	color: var(--white);
 	width: 300px;
 }
-.cgu-container .cgu-button:hover {
+.cgu-button:hover {
 	background-color: var(--black);
 }
 .cgu-button-container {
@@ -359,7 +420,7 @@ body::-webkit-scrollbar-thumb {
 	justify-content: center;
 	align-items: center;
 }
-.product-display .card {
+.card {
 	position: relative;
 	width: 320px;
 	height: 450px;
@@ -368,7 +429,7 @@ body::-webkit-scrollbar-thumb {
 	overflow: hidden;
 	margin: 30px;
 }
-.product-display .card:before {
+.card:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -379,10 +440,10 @@ body::-webkit-scrollbar-thumb {
 	clip-path: circle(150px at 80% 20%);
 	transition: 0.5s ease-in-out;
 }
-.product-display .card:hover:before {
+.card:hover:before {
   	clip-path: circle(150px at 80% -20%);
 }
-.product-display .card:after {
+.card:after {
 	content: 'INTEMPORAL';
 	position: absolute;
 	top: 30%;
@@ -392,7 +453,7 @@ body::-webkit-scrollbar-thumb {
 	font-style: italic;
 	color: rgba(255, 255, 255, 0.05)
 }
-.product-display .card .imgBx {
+.card .imgBx {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -401,11 +462,11 @@ body::-webkit-scrollbar-thumb {
 	height: 220px;
 	transition: 0.5s;
 }
-.product-display .card:hover .imgBx {
+.card:hover .imgBx {
 	top: 0%;
 	transform: translateY(0%);
 }
-.product-display .card .imgBx img {
+.card .imgBx img {
 	position: absolute;
 	top: 25%;
 	left: 30%;
@@ -418,11 +479,11 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 50%;
 
 }
-.product-display .card:hover .imgBx img {
+.card:hover .imgBx img {
 	opacity: 0;
 	transition: all 0.5s ease;
 }
-.product-display .card .contentBx {
+.card .contentBx {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -431,10 +492,10 @@ body::-webkit-scrollbar-thumb {
 	transition: 1s;
 	z-index: 10;
 }
-.product-display .card:hover .contentBx {
+.card:hover .contentBx {
   	height: 400px;
 }
-.product-display .card .contentBx .price {
+.card .contentBx .price {
 	color: var(--white);
 	font-size: 24px;
 	z-index: 100;
@@ -449,13 +510,13 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--white);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.product-display .card:hover .contentBx .price {
+.card:hover .contentBx .price {
 	color: var(--white);
 	z-index: 100;
 	margin: 0;
 	font-weight: bold;
 }
-.product-display .card .contentBx .time {
+.card .contentBx .time {
 	color: var(--white);
 	font-size: 18px;
 	margin: 10px;
@@ -463,10 +524,10 @@ body::-webkit-scrollbar-thumb {
 	top: -50%;
 	right: 0%;
 }
-.product-display .card:hover .contentBx .time {
+.card:hover .contentBx .time {
 	display: none;
 }
-.product-display .card:hover .contentBx h2 {
+.card:hover .contentBx h2 {
 	position: relative;
 	font-weight: 800;
 	letter-spacing: 1px;
@@ -475,13 +536,13 @@ body::-webkit-scrollbar-thumb {
 	display: contents;
 	z-index: 100;
 }
-.product-display .card .contentBx h2 {
+.card .contentBx h2 {
 	color: var(--first-blue);
 	font-size: 30px;
 	margin: 0;
 	background-color: var(--white);
 }
-.product-display .card:hover .contentBx .info {
+.card:hover .contentBx .info {
 	color: var(--white);
 	font-size: 18px;
 	margin-top: 30px;
@@ -489,11 +550,11 @@ body::-webkit-scrollbar-thumb {
 	position: absolute;
 	top : -30%;
 }
-.product-display .card .contentBx .info {
+.card .contentBx .info {
 	display: none;
 	margin-top: 30px;
 }
-.product-display .card .contentBx a {
+.card .contentBx a {
 	display: inline-block;
 	padding: 10px 20px;
 	background: var(--white);
@@ -507,7 +568,7 @@ body::-webkit-scrollbar-thumb {
 	transition: 0.5s;
 	margin-top: 50px;
 }
-.product-display .card:hover .contentBx a {
+.card:hover .contentBx a {
   	opacity: 1;
   	transform: translateY(0px);
   	transition-delay: 0.75s;
@@ -536,6 +597,15 @@ nav a {
 }
 .logo img {
 	width: 120px;
+}
+.logo h2 {
+	position: absolute;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--white);
+	margin: 0;
+	top: 4%;
+	left: 7%;
 }
 .nav-item {
     border-bottom: 2px solid transparent;
@@ -800,17 +870,18 @@ nav a {
 	border-radius: 5px;
 }
 .auction-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 200px;
-	height: 50px;
+	border: 1px solid var(--first-blue);
+	background-color: var(--black);
 	color: var(--white);
-	background-color: var(--first-blue);
-	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
 }
 .auction-button:hover {
-	background-color: var(--second-blue);
+	background-color: var(--first-blue);
 } 
 .auction-button:active {
 	transform: scale(0.95);
@@ -832,6 +903,140 @@ nav a {
 }
 
 /*end auction info*/
+
+
+/*beginning create auction*/
+
+.create-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+.create-container button {
+	margin: 30px 0;
+}
+.create-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+	width: 90%;
+	border-radius: 5px;
+	flex-direction: column;
+}
+.create-content h1 {
+	padding: 20px;
+}
+.create-content h2 {
+	padding-bottom: 15px;
+	padding-top: 12px;
+	font-weight: 400;
+	font-size: 24px;
+}
+.create-content textarea {
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+}
+.create-content select {
+	width: 100%;
+    padding: 6px 12px;
+}
+.auction-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: var(--white);
+}
+.create-form-item {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.create-form {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	width: 100%;
+}
+.col-create {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 15%;
+}
+.col-create select, .col input:not([type='checkbox']) {
+	width: 100%;
+	padding: 6px 12px;
+}
+.col-create ul{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.col-create li {
+	display: flex;
+	gap: 12px;
+	font-weight: 300
+}
+.obligatory {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*end create auction*/
+
+
+/*beginning clock*/
+
+.clock{
+	top: 1%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+}
+.hand{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: var(--first-blue);
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+.hour{
+    height: 20px;
+    width: 3px;
+    top: 21px;
+}
+.minute{
+    height: 27px;
+    width: 2px;
+    top: 14px;
+}
+.seconds{
+    height: 30px;
+    width: 1px;
+    top: 11px;
+}
+
+/*end clock*/
 
 
 /*mobile version*/
@@ -866,9 +1071,12 @@ nav a {
 		flex-direction: column;
 		align-items: center;
 	}
-	.logo {
-		font-size: 60px;
-		margin: 30px 0;
+	.logo h2 {
+		position: absolute;
+		color: var(--second-blue);
+		left: 43.5%;
+		top: 4.5%;
+		font-size: 18px;
 	}
 	.nav-item a {
 		font-size: 30px
@@ -890,15 +1098,15 @@ nav a {
 	.contentBx a {
 		font-size: 50px;
 	}
-	.product-display .card {
+	.card {
 		width: 740px;
 		height: 1000px;
 	}
-	.product-display .card .imgBx img {
+	.card .imgBx img {
 		width: 700px;
 		height: 700px;
 	}
-	.product-display .card .contentBx .price {
+	.card .contentBx .price {
 		color: var(--black);
 		font-size: 48px;
 		padding: 25px;
@@ -907,27 +1115,27 @@ nav a {
 		top: -900%;
 		right: 0%;
 	}
-	.product-display .card:after {
+	.card:after {
 		top: 30%;
 		left: -20%;
 		font-size: 30em;
 	}
-	.product-display .card .contentBx .time {
+	.card .contentBx .time {
 		font-size: 36px;
 		top: -150%;
 	}
-	.product-display .card:hover .contentBx h2 {
+	.card:hover .contentBx h2 {
 		position: absolute;
 		top : -100%;
 		font-size: 70px;
 	}
-	.product-display .card .contentBx h2 {
+	.card .contentBx h2 {
 		position: absolute;
 		top : -100%;
 		width: 100%;
 		font-size: 60px;
 	}
-	.product-display .card:hover .contentBx .info {
+	.card:hover .contentBx .info {
 		display: none;
 		font-size: 36px;
 		line-height: 40px;
@@ -1032,5 +1240,82 @@ nav a {
 		font-size: 40px;
 		margin-top: 20px;
 		text-align: center;
+	}
+	/*create auction*/
+	.create-form {
+		flex-direction: column;
+		align-items: center;
+	}
+	.create-form h2 {
+		font-size: 60px;
+	}
+	.create-form input {
+		font-size: 35px;
+	}
+	.create-form textarea {
+		font-size: 35px;
+	}
+	.create-form button {
+		font-size: 35px;
+	}
+	.create-form label {
+		font-size: 35px;
+	}
+	.create-form select {
+		font-size: 35px;
+	}
+	.auction-form button {
+		font-size: 40px;
+	}
+	.auction-form p {
+		font-size: 35px;
+	}
+	.col-create {
+		width: 100%;
+	}
+	/*modal*/
+	.modal p {
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.modal button {
+		margin-top: 40px;
+		width: 500px;
+		font-size: 35px;
+	}
+	.modal h2 {
+		font-size: 70px;
+	}
+	.modal input {
+		font-size: 35px;
+	}
+	.modal-close {
+		font-size: 3.5em;
+	}
+	.modal-content {
+		width: 90%;
+	}
+	/*clock*/
+	.clock {
+		position: relative;
+		width: 160px;
+		height: 160px;
+	}
+	.hour{
+		height: 30px;
+		width: 5px;
+		top: 50px;
+	}
+	.minute{
+		height: 40px;
+		width: 2.5px;
+		top: 40px;
+	}
+	.seconds{
+		height: 45px;
+		width: 1.5px;
+		top: 35px;
 	}
 }

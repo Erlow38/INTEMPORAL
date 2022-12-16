@@ -10,7 +10,14 @@
   <body class="body-shop">
     <div class="transition transition-slide is-active"></div>
     <header>
-      <a class="logo" href="index.html"><img src="img/logo.png" alt="INTEMPORAL"></a>
+      <a class="logo" href="index.html">
+        <div class="clock">
+          <div class="hour hand" id="hour"></div>
+          <div class="minute hand" id="minute"></div>
+          <div class="seconds hand" id="seconds"></div>
+        </div>
+        <h2>INTEMPORAL</h2>
+      </a>
       <nav>
           <ul class="nav-container">
               <li class="nav-item"><a href="index.html">ACCUEIL</a></li>
@@ -228,5 +235,6 @@
       }
     </script>
     <script src="js/transition.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>
