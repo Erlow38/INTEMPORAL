@@ -1159,7 +1159,7 @@ nav a {
 	}
 	/*user menu*/
 	.sub-menu-wrap {
-		top : 11.5%;
+		top : 15.5%;
 		right: 4%;
 		width: 450px;
 	}
@@ -1178,7 +1178,7 @@ nav a {
 	}
 	/*filter menu*/
 	.filter-menu-wrap {
-		top: 12.1%;
+		top: 16%;
 		right: 0;
 		background-color: #415A77;
 		display: flex;
