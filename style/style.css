@@ -939,6 +939,7 @@ nav a {
 	padding-top: 12px;
 	font-weight: 400;
 	font-size: 22px;
+	text-align: left;
 }
 .create-content textarea {
 	width: 100%;
