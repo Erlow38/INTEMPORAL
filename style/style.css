@@ -1264,6 +1264,9 @@ nav a {
 		text-align: center;
 	}
 	/*create auction*/
+	.create-content h1 {
+		font-size: 70px;
+	}
 	.create-form {
 		flex-direction: column;
 		align-items: center;
