@@ -119,15 +119,46 @@
                         <input type="text" name="model" id="model" placeholder="Modèle (ex: Daytona)" required>
                     </div>
                     <div class="create-form-item">
+                      <h2>Date de mise en circulation*</h2>
+                      <input type="text" name="date-circulation" id="date-circulation" placeholder="Date (ex: 2019)" required>
+                  </div>
+                    <div class="create-form-item">
                         <h2>Référence *</h2>
                         <input type="text" name="ref" id="ref" placeholder="Référence (ex: 116500LN)" required>
                     </div>
+                    <div class="create-form-item">
+                      <div class="mistake"><h2>État de la montre *</h2><a href="#open-modal-condition">?</a></div>
+                      <select name="categorie-create" id="categorie-create" required>
+                          <option value="aaa">--État--</option>
+                          <option value="j-p">Jamais portée</option>
+                          <option value="aaa">Comme neuve</option>
+                          <option value="aaa">Très bon état</option>
+                          <option value="aaa">Bon état</option>
+                          <option value="aaa">État correct</option>
+                      </select>
+                      <div id="open-modal-condition" class="modal">
+                        <div class="modal-content">
+                            <h2>Voici les états possible pour votre montre</h2>
+                            <h3>Jamais portée</h3>
+                            <p>Article jamais porté et en parfait état de fonctionnement.</p>
+                            <h3>Comme neuve</h3>
+                            <p>Article en parfait état de fonctionnement. L'emballage d'origine est intact et en bon état, des défauts mineurs peuvent être observés.</p>
+                            <h3>Très bon état</h3>
+                            <p>Article bien entretenu, qui a été utilisé de façon limitée et qui reste en bon état de fonctionnement. L'article peut présenter de légers signes d'usure, petites rayures ou imperfections esthétiques. L'article peut avoir un emballage légèrement endommagé.</p>
+                            <h3>Bon état</h3>
+                            <p>L'article montre des signes d'usure dus à une utilisation constante, mais il reste en bon état et fonctionne correctement. L'article peut avoir un emballage endommagé. Il peut être marqué, porter des marques d'identification ou présenter des dommages esthétiques mineurs.</p>
+                            <h3>État correct</h3>
+                            <p>L'article présente des signes d'usure, mais fonctionne correctement. L'article peut avoir un emballage endommagé. L'article peut présenter des marques ou autres signes d'utilisation antérieure.</p>
+                            <a href="#" class="modal-close">&times;</a>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-create">
                     <div class="create-form-item">
                         <h2>Catégorie *</h2>
                         <select name="categorie-create" id="categorie-create" required>
-                            <option value="aaa">--Catégorie--</option>
+                            <option value="">--Catégorie--</option>
                             <option value="aaa">Mécanique</option>
                             <option value="aaa">Automatique</option>
                             <option value="aaa">Quartz</option>

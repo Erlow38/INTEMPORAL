@@ -292,7 +292,7 @@ body::-webkit-scrollbar-thumb {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 100;
+	z-index: 1000;
 }
 .modal p {
 	margin-top: 10px;
@@ -335,6 +335,9 @@ body::-webkit-scrollbar-thumb {
 	width: 500px;
 	max-width: 90%;
 	padding: 1.5em 2em;
+}
+.modal-content h3 {
+	color: var(--black);
 }
 .modal-content p {
 	font-size: 16px;
