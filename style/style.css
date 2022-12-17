@@ -1317,6 +1317,9 @@ nav a {
 	.modal h2 {
 		font-size: 70px;
 	}
+	.modal h3 {
+		font-size: 50px;
+	}
 	.modal input {
 		font-size: 35px;
 	}
