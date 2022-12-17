@@ -536,13 +536,10 @@ nav a {
 	width: 120px;
 }
 .logo h2 {
-	position: absolute;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 	color: var(--white);
-	margin: 0;
-	top: 4%;
-	left: 7%;
+	margin-left: 55%;
 }
 .nav-item {
     border-bottom: 2px solid transparent;
@@ -902,6 +899,9 @@ nav a {
 	width: 100%;
 	margin-bottom: 20px;
 }
+.create-form-item label {
+	text-align: left;
+}
 .create-form {
 	display: flex;
 	justify-content: space-around;
@@ -1097,6 +1097,7 @@ nav a {
 	.logo h2 {
 		position: absolute;
 		color: var(--second-blue);
+		margin: 0%;
 		left: 43.5%;
 		top: 4.5%;
 		font-size: 18px;
