@@ -1001,8 +1001,9 @@ nav a {
 }
 .mistake {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 .mistake a {
 	font-size: 12px;
