@@ -112,15 +112,15 @@
                 <div class="col-create">
                     <div class="create-form-item">
                         <h2>Marque *</h2>
-                        <input type="text" name="brand" id="brand" placeholder="Marque" required>
+                        <input type="text" name="brand" id="brand" placeholder="Marque (ex: Rolex)" required>
                     </div>
                     <div class="create-form-item">
                         <h2>Modèle *</h2>
-                        <input type="text" name="model" id="model" placeholder="Modèle" required>
+                        <input type="text" name="model" id="model" placeholder="Modèle (ex: Daytona)" required>
                     </div>
                     <div class="create-form-item">
                         <h2>Référence *</h2>
-                        <input type="text" name="ref" id="ref" placeholder="Référence" required>
+                        <input type="text" name="ref" id="ref" placeholder="Référence (ex: 116500LN)" required>
                     </div>
                 </div>
                 <div class="col-create">
@@ -165,30 +165,62 @@
                 </div>
                 <div class="col-create">
                     <div class="create-form-item">
-                        <h2>Description raccourcie *</h2>
+                        <div class="mistake"><h2>Description raccourcie *</h2><a href="#open-modal-short-description">?</a></div>
+                        <div id="open-modal-short-description" class="modal">
+                            <div class="modal-content">
+                                <h2>Ceci est la description raccourcie</h2>
+                                <p>La description raccourcie est une petite description qui apparaitra sur la carte de votre produit. Elle offre une courte description de votre montre en 150 charactères pour attirer l'attention des futurs acheteurs !</p>
+                                <img src="img/sort-description.jpg" alt="">
+                                <a href="#" class="modal-close">&times;</a>
+                            </div>
+                        </div>
                         <textarea name="description" id="description" cols="50" rows="100" placeholder="Description (max 150 charactères)" maxlength="150" required></textarea>
                     </div>
                     <div class="create-form-item">
-                        <h2>Description détaillée *</h2>
+                        <div class="mistake"><h2>Description détaillée *</h2><a href="#open-modal-long-description">?</a></div>
+                        <div id="open-modal-long-description" class="modal">
+                            <div class="modal-content">
+                                <h2>Ceci est la description détaillée</h2>
+                                <p>La descriptions détaillée vous permettra d'offrir une description complète et détaillée de votre montre aux futurs acheteurs. Elle est bien plus complètes que la description raccourcie et vous permettra donc de parler de toutes les qualitées de votre montre !</p>
+                                <img src="img/long-description.jpg" width="500px" alt="">
+                                <a href="#" class="modal-close">&times;</a>
+                            </div>
+                        </div>
                         <textarea name="description" id="description" cols="50" rows="100" placeholder="Description détaillée" required></textarea>
                     </div>
                 </div>
                 <div class="col-create">
                     <div class="create-form-item">
-                        <h2>Image principale *</h2>
+                        <div class="mistake"><h2>Image principale *</h2><a href="#open-modal-primary-image">?</a></div>
+                        <div id="open-modal-primary-image" class="modal">
+                            <div class="modal-content">
+                                <h2>Ceci est l'image principale</h2>
+                                <p>L'image principale sera la première image que les acheteurs verront, elle apparaitra sur la carte de votre produit. Choisissez la bien pour attirer l'oeil des futurs acheteurs !</p>
+                                <img src="img/primary-image.jpg" alt="">
+                                <a href="#" class="modal-close">&times;</a>
+                            </div>
+                        </div>
                         <input type="file" name="image" id="image" required>
                     </div>
                     <div class="create-form-item">
-                        <h2>Image secondaire</h2>
+                        <div class="mistake"><h2>Image secondaire *</h2><a href="#open-modal-secondary-image">?</a></div>
                         <input type="file" name="image" id="image">
                     </div>
                     <div class="create-form-item">
-                        <h2>Image secondaire</h2>
+                        <div class="mistake"><h2>Image secondaire *</h2><a href="#open-modal-secondary-image">?</a></div>
                         <input type="file" name="image" id="image">
                     </div>
                     <div class="create-form-item">
-                        <h2>Image secondaire</h2>
+                        <div class="mistake"><h2>Image secondaire *</h2><a href="#open-modal-secondary-image">?</a></div>
                         <input type="file" name="image" id="image">
+                    </div>
+                    <div id="open-modal-secondary-image" class="modal">
+                        <div class="modal-content">
+                            <h2>Ceci est l'image secondaire</h2>
+                            <p>L'image secondaire sera une image qui apparaitra dans un carrousel d'images pour permettre aux futurs acheteurs de voir votre montre sous ses plus beaux angles !</p>
+                            <img src="img/secondary-image.jpg" width="500px" alt="">
+                            <a href="#" class="modal-close">&times;</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-create">
@@ -202,7 +234,7 @@
                     </div>
                     <div class="create-form-item">
                         <h2>Prix de départ *</h2>
-                        <input type="number" name="price" id="price" placeholder="Prix de départ" min="0" required>
+                        <input type="number" name="price" id="price" placeholder="Prix de départ en euros (ex: 100)" min="0" required>
                     </div>
                 </div>
             </div>
