@@ -12,4 +12,6 @@ if (mm < 10) {
 } 
     
 today = yyyy + '-' + mm + '-' + dd;
+year = yyyy;
 document.getElementById("date").setAttribute("min", today);
+document.getElementById("annee-circulation").setAttribute("max", year);
