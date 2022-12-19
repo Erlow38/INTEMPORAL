@@ -195,6 +195,10 @@
                     </div>
                 </div>
                 <div class="col-create">
+                  <div class="create-form-item">
+                      <h2>Prix de départ *</h2>
+                      <input type="number" name="price" id="price" placeholder="Prix de départ en euros (ex: 100)" min="0" required>
+                  </div>
                     <div class="create-form-item">
                         <div class="mistake"><h2>Description raccourcie *</h2><a href="#open-modal-short-description">?</a></div>
                         <div id="open-modal-short-description" class="modal">
@@ -253,20 +257,16 @@
                             <a href="#" class="modal-close">&times;</a>
                         </div>
                     </div>
+                    <div class="create-form-item">
+                      <div class="mistake"><h2>Date de départ et durée</h2><a href="#open-modal-duree">?</a></div>
+                  </div>
+                  <div id="open-modal-duree" class="modal">
+                    <div class="modal-content">
+                        <h2>Date de départ et durée</h2>
+                        <p>La date de départ est déterminée par nos administrateurs en fonction de la durée de réception et de vérification de la montre. La durée de la vente est fixée à 7 jours, en accord avec notre politique de vente aux enchères.</p>
+                        <a href="#" class="modal-close">&times;</a>
+                    </div>
                 </div>
-                <div class="col-create">
-                    <div class="create-form-item">
-                        <h2>Date de fin *</h2>
-                        <input type="date" name="date" id="date" min="" required>
-                    </div>
-                    <div class="create-form-item">
-                        <h2>Heure de fin *</h2>
-                        <input type="time" name="time" id="time" required>
-                    </div>
-                    <div class="create-form-item">
-                        <h2>Prix de départ *</h2>
-                        <input type="number" name="price" id="price" placeholder="Prix de départ en euros (ex: 100)" min="0" required>
-                    </div>
                 </div>
             </div>
             <p class="obligatory">* champs obligatoires</p>
